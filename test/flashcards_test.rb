@@ -5,12 +5,12 @@ require './lib/flashcards'
 
 class CardTest < Minitest::Test
   def test_does_card_have_a_question
-    card = Card.new("In what year did the war of 1812 begin?", "1812")
-    assert_equal "In what year did the war of 1812 begin?", card.question
+    card = Card.new("What is the capital of Alaska?", "Juneau")
+    assert_equal "What is the capital of Alaska?", card.question
   end
 
   def test_does_card_have_an_answer
-    card = Card.new("In what year did the war of 1812 begin?", "1812")
-    assert_equal "1812", card.answer
+    card = Card.new("What is the capital of Alaska?", "Juneau")
+    assert_equal "Juneau", card.answer
   end
 end
